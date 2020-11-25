@@ -33,3 +33,9 @@ flags: `--hard` and `--mixed`
 ```js
     git restore --source <commit hash> <file name>
 ```
+
+## Track every movement of HEAD pointer USE: recover deleted commits and branch atleast I know
+
+```js
+    git reflog
+```
