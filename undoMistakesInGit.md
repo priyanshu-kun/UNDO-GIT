@@ -93,3 +93,15 @@ _After execute git reflog you will get all movement of your head pointer so copy
 ```
 
 ## here you need to use _drop_ keyword in front of hash of popup window
+
+---
+
+## Combine multiple commits
+
+```
+    git rebase -i HEAD~<number of steps>
+```
+
+## here you need to use **squash** keyword _please google how to use squash casuse it is quite easy_
+
+> NOTE: when you use squash keyword It create a new commit and new commit mean you again need to provide new commit message
