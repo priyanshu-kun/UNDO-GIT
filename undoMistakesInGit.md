@@ -76,6 +76,8 @@ _After execute git reflog you will get all movement of your head pointer so copy
 
 ---
 
+# This is interactive rebase
+
 ## Change commit name far back in commit history **NOTE: This is do you by --amend command but it takes you back in history only 1 step** and if you want to go back more deep in commit history so here is some command for you
 
 ```
