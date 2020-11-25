@@ -27,3 +27,9 @@ flags: `--hard` and `--mixed`
 ### --hard mean I need clean working directory
 
 ### --mixed mean keep all prev changes MEAN: It revert changes but keep all files in your working dir in form of uncommited
+
+## If you want to check a specific file history over the commits locally.
+
+```js
+    git restore --source <commit hash> <file name>
+```
