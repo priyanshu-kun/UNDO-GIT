@@ -54,7 +54,7 @@ flags: `--hard` and `--mixed`
 
 ## A quite good practicle feature of reflog command as I say you will recover deleted commits or branches through reflog command so here is an example.
 
-_After execute git reflog you will get all movement of your head pointer so copy the hash of the commit you want to restore and create a new branch and whalllah! you will get all of your deleted work _
+*After execute git reflog you will get all movement of your head pointer so copy the hash of the commit you want to restore and create a new branch and whalllah! you will get all of your deleted work*
 
 > NOTE: do not restore lost commit in your master branch
 
@@ -78,13 +78,16 @@ _After execute git reflog you will get all movement of your head pointer so copy
 
 # This is interactive rebase
 
-## Change commit name far back in commit history **NOTE: This is do you by --amend command but it takes you back in history only 1 step** and if you want to go back more deep in commit history so here is some command for you
+## Change commit name far back in commit history .
+**NOTE: This is do you by --amend command but it takes you back in history only 1 step** and if you want to go back more deep in commit history so here is some command for you
 
 ```
     git rebase -i HEAD~<number of steps you want to go deep in history like: 3>
 ```
 
-## After you execute that command a pop window will apper. **Here something you should keep in mind 1: The window will show all your commits before the number of steps you provide in rebase command and the order will be reverse _MEAN: the first commit become last_ 2: You don't change commit message directely on that popup window to change commit name you should add this **reword** before the hash you will show on your window _eg: reword <hash 8bcf233> <commet message_ and save and closed after marking that line with that keyword and finally an another window will apper with your prev message where you should change your message after change message save and closed that window**
+## After you execute that command a pop window will apper. 
+
+Here something you should keep in mind 1: The window will show all your commits before the number of steps you provide in rebase command and the order will be reverse _MEAN: the first commit become last_ 2: You don't change commit message directely on that popup window to change commit name you should add this **reword** before the hash you will show on your window _eg: reword <hash 8bcf233> <commet message_ and save and closed after marking that line with that keyword and finally an another window will apper with your prev message where you should change your message after change message save and closed that window**
 
 ---
 
