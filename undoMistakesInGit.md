@@ -1,6 +1,6 @@
 ## Restore uncommited changes in a file
 
-```js
+```
     git restore <file name>
 ```
 
@@ -8,7 +8,7 @@
 
 ## Restore all uncommited changes in whole folder structure and back to clean working dir
 
-```js
+```
     git restore <.>
 ```
 
@@ -16,7 +16,7 @@
 
 ## Add a new message in prev commit
 
-```js
+```
     git commit --amend -m "new message"
 ```
 
@@ -24,7 +24,7 @@
 
 ## To reset commit **MEAN: if you want to time travel back in time a go back to prev working commit and discard all commits that comes after of working commit**
 
-```js
+```
     git reset --hard <commit hash eg: 193...fabda88>
 ```
 
@@ -38,7 +38,7 @@ flags: `--hard` and `--mixed`
 
 ## If you want to check a specific file history over the commits locally.
 
-```js
+```
     git restore --source <commit hash> <file name>
 ```
 
@@ -46,7 +46,7 @@ flags: `--hard` and `--mixed`
 
 ## Track every movement of HEAD pointer **USE: recover deleted commits and branch atleast I know**
 
-```js
+```
     git reflog
 ```
 
@@ -58,9 +58,28 @@ _After execute git reflog you will get all movement of your head pointer so copy
 
 > NOTE: do not restore lost commit in your master branch
 
-```js
+```
     git reflog
     git branch <branch name> <commit hash>
 ```
 
 ---
+
+## For move commit into different branch **eg: master -> <some other branch> OR <some other branch> -> master**
+
+```
+    git checkout <some other branch>
+    git cherry-pick <commit SHA>
+    git checkout master
+    git reset --hard HEAD~1
+```
+
+---
+
+## Change commit name far back in commit history **NOTE: This is do you by --amend command but it takes you back in history only 1 step** and if you want to go back more deep in commit history so here is some command for you
+
+```
+    git rebase -i HEAD~<number of steps you want to go deep in history like: 3>
+```
+
+## After you execute that command a pop window will apper. **Here something you should keep in mind 1: The window will show all your commits before the number of steps you provide in rebase command and the order will be reverse _MEAN: the first commit become last_ 2: You don't change commit message directely on that popup window to change commit name you should add this **reword** before the hash you will show on your window _eg: reword <hash 8bcf233> <commet message_ and save and closed after marking that line with that keyword and finally an another window will apper with your prev message where you should change your message after change message save and closed that window**
