@@ -83,3 +83,13 @@ _After execute git reflog you will get all movement of your head pointer so copy
 ```
 
 ## After you execute that command a pop window will apper. **Here something you should keep in mind 1: The window will show all your commits before the number of steps you provide in rebase command and the order will be reverse _MEAN: the first commit become last_ 2: You don't change commit message directely on that popup window to change commit name you should add this **reword** before the hash you will show on your window _eg: reword <hash 8bcf233> <commet message_ and save and closed after marking that line with that keyword and finally an another window will apper with your prev message where you should change your message after change message save and closed that window**
+
+---
+
+## Drop/delete a commit
+
+```
+    git rebase -i HEAD~<number of steps>
+```
+
+## here you need to use _drop_ keyword in front of hash of popup window
