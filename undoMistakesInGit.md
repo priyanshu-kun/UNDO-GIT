@@ -26,4 +26,4 @@ flags: `--hard` and `--mixed`
 
 ### --hard mean I need clean working directory
 
-### --mixed mean keep all prev changes
+### --mixed mean keep all prev changes MEAN: It revert changes but keep all files in your working dir in form of uncommited
