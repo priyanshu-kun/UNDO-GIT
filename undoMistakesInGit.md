@@ -4,7 +4,7 @@
     git restore <file name>
 ```
 
-## Restore all uncommited changes in whole folder structure
+## Restore all uncommited changes in whole folder structure and back to clean working dir
 
 ```js
     git restore <.>
