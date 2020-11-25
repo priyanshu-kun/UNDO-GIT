@@ -21,3 +21,9 @@
 ```js
     git reset --hard <commit hash eg: 193...fabda88>
 ```
+
+flags: `--hard` and `--mixed`
+
+### --hard mean I need clean working directory
+
+### --mixed mean keep all prev changes
