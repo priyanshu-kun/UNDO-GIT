@@ -22,7 +22,8 @@
 
 ---
 
-## To reset commit **MEAN: if you want to time travel back in time a go back to prev working commit and discard all commits that comes after of working commit**
+## To reset commit 
+**MEAN: if you want to time travel back in time a go back to prev working commit and discard all commits that comes after of working commit**
 
 ```
     git reset --hard <commit hash eg: 193...fabda88>
